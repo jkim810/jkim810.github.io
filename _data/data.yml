@@ -1,6 +1,6 @@
 basic:
   name: Junbum Kim                      # name
-  title: PhD Student           # job title
+  title: PhD Candidate @ Weill Cornell Medicine           # job title
   avatar:
     show: true                       # show or hide avatar
     path: /assets/images/profile.jpg # avatar file path
