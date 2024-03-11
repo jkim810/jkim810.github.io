@@ -39,10 +39,10 @@ contact:
   # tryhackme:               # username          | https://tryhackme.com/p/username
 
   # academic
-  googlescholar:           # username          | https://scholar.google.com/citations?user=username
+  googlescholar: gdjxtusAAAAJ           # username          | https://scholar.google.com/citations?user=username
   # researchgate:            # username          | https://www.researchgate.net/profile/username
   # kaggle:                  # username          | https://www.kaggle.com/username
-  orcid:                   # id                | https://orcid.org/id
+  orcid: 0000-0001-7344-1593                  # id                | https://orcid.org/id
   # figshare:                # name/id           | https://figshare.com/authors/name/id
 
   # writer
