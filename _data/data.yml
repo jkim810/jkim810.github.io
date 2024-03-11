@@ -10,11 +10,11 @@ contact:
   location: New York, United States # location
   email: jkim0810@gmail.com    # email address
   phone: +1-347-454-4245 # phone number, format is "+[Country Code] [Area Code (if applicable)] [Local Phone Number]"
-  website: example.com     # site URL without schema, like example.com, will automatically prepand "https://"
+  # website: example.com     # site URL without schema, like example.com, will automatically prepand "https://"
 
-  gender: Male, He                  # gender or pronoun
+  # gender: Male, He                  # gender or pronoun
   birthday: Aug 10, 1994               # birthday
-  nationality: South Korea            # nationality
+  # nationality: South Korea            # nationality
   # visa:                    # passport visa
   # drivinglicense:          # driving licence
 
@@ -107,7 +107,7 @@ education:
       description: |
         + Principal Investigator: Olivier Elemento
 
-    - institution: The Cooper Union for the advancement of science and art
+    - institution: The Cooper Union for the Advancement of Science and Art
       link: 'https://cooper.edu/welcome'
       date: 2019 - 2020
       major: Electrical Engineering
@@ -115,16 +115,16 @@ education:
       description: |
         + Cumulative G.P.A 4.0 / 4.0
         + Principal Investigator: Sam Keene and Eduard Reznik
+        + Half-tuition Scholarship
 
-    - institution: The Cooper Union for the advancement of science and art
+    - institution: The Cooper Union for the Advancement of Science and Art
       link: 'https://cooper.edu/welcome'
       date: 2013 - 2015, 2017 - 2019
-      major: Electrical Engineering
-      minor: Computer Science
-      degree: Master
+      major: Electrical Engineering, minor in Computer Science
+      degree: Bachelor
       description: |
         + Cumulative G.P.A 3.8 / 4.0
-        + Principal Investigator: Sam Keene and Eduard Reznik
+        + Full-tuition Scholarship
 
 publication:
   show: true
@@ -144,7 +144,7 @@ publication:
       authors: Foo Bar
       conference: Foobar, 2019
       link: '#'
-      
+
     - title: The Art of Example Publication
       authors: Foo Bar
       conference: Foobar, 2019
