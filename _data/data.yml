@@ -225,7 +225,7 @@ experience:
       tags: Full-time
       date: Summer 2019
       role: Quantitative Research Internship
-      location: New York, United States
+      location: New York, United
       description: |
         + Explored dimensionality reduction algorithms such as principal component analysis, autoencoders, T-stochastic neighborhood embedding, and uniform manifold approximation and projection to test their robustness to noise
         + Investigated how each algorithm performs for various datasets with different number of samples and features including iris petal data (150 samples, 4 features), Parkinson disease data (240 samples, 46 features), and the MNIST digits data (60,000 samples, 768 features)
@@ -365,17 +365,17 @@ project2:
       tags: Artificial Intelligence
       date: Fall 2017
       description: |
-        • Programmed Othello (Reversi), a two-player strategy board game in Java
-        • Implemented iterative deepening search using minimax tree and an alpha-beta pruning algorithm to program a rational agent that would outplay human players within a given time
+        + Programmed Othello (Reversi), a two-player strategy board game in Java
+        + Implemented iterative deepening search using minimax tree and an alpha-beta pruning algorithm to program a rational agent that would outplay human players within a given time
 
     - name: Pete’s Beats
       link:
       tags: Engineering Design and Problem Solving
       date: Fall 2013
       description: |
-        • Designed a dancing pad with entertaining games for the B’N Fit Program at The Children’s Hospital at Montefiore, to comprehensively address the issue of adolescent obesity
-        • Integrated hardware and software components as a Software Project Manager to build a durable and versatile gaming machine
-        • Compiled a console program using Arduino Leonardo in C
+        + Designed a dancing pad with entertaining games for the B’N Fit Program at The Children’s Hospital at Montefiore, to comprehensively address the issue of adolescent obesity
+        + Integrated hardware and software components as a Software Project Manager to build a durable and versatile gaming machine
+        + Compiled a console program using Arduino Leonardo in C
 
 
 skill:
