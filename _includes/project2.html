@@ -1,6 +1,6 @@
 {%- assign project2 = data.project2 %}
 {%- if project2 and project2.show %}
-<section class="project2" style="order: {{ project.order | default: 1 }}">
+<section class="project2" style="order: {{ project2.order | default: 1 }}">
   <div class="section-title">
     <i class="section-icon fa-solid fa-folder-open"></i>
     <h2>{{ project2.title }}</h2>
