@@ -1,26 +1,26 @@
-{%- assign project = data.project %}
-{%- if project and project.show %}
+{%- assign project2 = data.project2 %}
+{%- if project2 and project2.show %}
 <section class="project2" style="order: {{ project.order | default: 1 }}">
   <div class="section-title">
     <i class="section-icon fa-solid fa-folder-open"></i>
-    <h2>{{ project.title }}</h2>
+    <h2>{{ project2.title }}</h2>
   </div>
 
   <div class="section-content">
-    {%- if project.description.size > 0 %}
+    {%- if project2.description.size > 0 %}
     <div class="description markdown">
-      {{ project.description | markdownify }}
+      {{ project2.description | markdownify }}
     </div>
     {%- endif %}
 
-    {%- if project.items %}
+    {%- if project2.items %}
     <div class="items">
-      {%- for item in project.items %}
+      {%- for item in project2.items %}
       <div class="item">
 
         {%- if item.name %}
         <div class="row">
-          <div class="project-name">
+          <div class="project2-name">
             {%- if item.link %}
             <a href="{{ item.link }}" target="_blank">{{ item.name }}</a>
             {%- else %}
