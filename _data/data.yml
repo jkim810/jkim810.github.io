@@ -1,82 +1,82 @@
 basic:
-  name: Foo Bar                      # name
-  title: Backend Developer           # job title
+  name: Junbum Kim                      # name
+  title: PhD Student           # job title
   avatar:
     show: true                       # show or hide avatar
-    path: /assets/images/profile.png # avatar file path
+    path: /assets/images/profile.jpg # avatar file path
 
 contact:
   # meta
-  location: Beijing, China # location
-  email: me@example.com    # email address
-  phone: +86-111-2222-3333 # phone number, format is "+[Country Code] [Area Code (if applicable)] [Local Phone Number]"
+  location: New York, United States # location
+  email: jkim0810@gmail.com    # email address
+  phone: +1-347-454-4245 # phone number, format is "+[Country Code] [Area Code (if applicable)] [Local Phone Number]"
   website: example.com     # site URL without schema, like example.com, will automatically prepand "https://"
 
-  gender:                  # gender or pronoun
-  birthday:                # birthday
-  nationality:             # nationality
-  visa:                    # passport visa
-  drivinglicense:          # driving licence
+  gender: Male, He                  # gender or pronoun
+  birthday: Aug 10, 1994               # birthday
+  nationality: South Korea            # nationality
+  # visa:                    # passport visa
+  # drivinglicense:          # driving licence
 
   # contact
-  wechat:                  # username
-  whatsapp:                # 8611122223333     | https://wa.me/8611122223333
-  telegram:                # username          | https://t.me/username
-  messenger:               # username          | https://m.me/username
-  line:                    # lineid            | https://line.me/R/ti/p/@lineid
-  viber:                   # username          | https://vb.me/username
-  threema:                 # userid            | https://threema.id/userid
+  # wechat:                  # username
+  # whatsapp:                # 8611122223333     | https://wa.me/8611122223333
+  # telegram:                # username          | https://t.me/username
+  # messenger:               # username          | https://m.me/username
+  # line:                    # lineid            | https://line.me/R/ti/p/@lineid
+  # viber:                   # username          | https://vb.me/username
+  # threema:                 # userid            | https://threema.id/userid
 
   # programmer
-  github:                  # username          | https://github.com/username
-  gitlab:                  # username          | https://gitlab.com/username
-  bitbucket:               # username          | https://bitbucket.com/username
-  stackoverflow:           # id or id/username | https://stackoverflow.com/users/id/username
-  leetcode:                # username          | https://leetcode.com/username
-  codeforces:              # username          | https://codeforces.com/profile/username
-  codewars:                # username          | https://www.codewars.com/users/username
-  codepen:                 # username          | https://codepen.io/username
-  tryhackme:               # username          | https://tryhackme.com/p/username
+  github: jkim810                 # username          | https://github.com/username
+  # gitlab:                  # username          | https://gitlab.com/username
+  # bitbucket:               # username          | https://bitbucket.com/username
+  # stackoverflow:           # id or id/username | https://stackoverflow.com/users/id/username
+  # leetcode:                # username          | https://leetcode.com/username
+  # codeforces:              # username          | https://codeforces.com/profile/username
+  # codewars:                # username          | https://www.codewars.com/users/username
+  # codepen:                 # username          | https://codepen.io/username
+  # tryhackme:               # username          | https://tryhackme.com/p/username
 
   # academic
   googlescholar:           # username          | https://scholar.google.com/citations?user=username
-  researchgate:            # username          | https://www.researchgate.net/profile/username
-  kaggle:                  # username          | https://www.kaggle.com/username
+  # researchgate:            # username          | https://www.researchgate.net/profile/username
+  # kaggle:                  # username          | https://www.kaggle.com/username
   orcid:                   # id                | https://orcid.org/id
-  figshare:                # name/id           | https://figshare.com/authors/name/id
+  # figshare:                # name/id           | https://figshare.com/authors/name/id
 
   # writer
-  devto:                   # username          | https://dev.to/username
-  medium:                  # username          | https://medium.com/@username
-  wordpress:               # username          | https://username.wordpress.com
-  blogger:                 # username          | https://username.blogspot.com
-  wikipedia:               # username          | https://www.wikipedia.org/wiki/User:username
+  # devto:                   # username          | https://dev.to/username
+  # medium:                  # username          | https://medium.com/@username
+  # wordpress:               # username          | https://username.wordpress.com
+  # blogger:                 # username          | https://username.blogspot.com
+  # wikipedia:               # username          | https://www.wikipedia.org/wiki/User:username
 
-  # designer
-  figma:                   # username          | https://www.figma.com/@username
-  behance:                 # username          | https://www.behance.net/username
-  dribble:                 # username          | https://dribbble.com/username
-  artstation:              # username          | https://www.artstation.com/username
+  # # designer
+  # figma:                   # username          | https://www.figma.com/@username
+  # behance:                 # username          | https://www.behance.net/username
+  # dribble:                 # username          | https://dribbble.com/username
+  # artstation:              # username          | https://www.artstation.com/username
 
   # other cv
-  linkedin:                # username          | https://linkedin.com/in/username
-  indeed:                  # resumeid          | https://my.indeed.com/p/resumeid
-  xing:                    # username          | https://www.xing.com/profile/username
-  fiverr:                  # username          | https://www.fiverr.com/username
-  freelancer:              # username          | https://www.freelancer.com/u/username
+  linkedin: junbum-kim-25a27190               # username          | https://linkedin.com/in/username
+  # indeed:                  # resumeid          | https://my.indeed.com/p/resumeid
+  # xing:                    # username          | https://www.xing.com/profile/username
+  # fiverr:                  # username          | https://www.fiverr.com/username
+  # freelancer:              # username          | https://www.freelancer.com/u/username
 
   # social media
-  twitter:                 # username          | https://twitter.com/username
-  mastodon:                # username@server
-  instagram:               # username          | https://instagram.com/username
-  unsplash:                # username          | https://unsplash.com/@username
-  _500px:                  # username          | https://500px.com/p/username
-  youtube:                 # username          | https://www.youtube.com/@username
-  tiktok:                  # username          | https://www.tiktok.com/@username
-  quora:                   # username          | https://www.quora.com/profile/username
-  zhihu:                   # username          | https://www.zhihu.com/people/username
-  goodreads:               # username          | https://www.goodreads.com/user/show/username
-  strava:                  # useid             | https://www.strava.com/athletes/userid
+  twitter: junbum_kim                # username          | https://twitter.com/username
+  # mastodon:                # username@server
+  # instagram:               # username          | https://instagram.com/username
+  # unsplash:                # username          | https://unsplash.com/@username
+  # _500px:                  # username          | https://500px.com/p/username
+  # youtube:                 # username          | https://www.youtube.com/@username
+  # tiktok:                  # username          | https://www.tiktok.com/@username
+  # quora:                   # username          | https://www.quora.com/profile/username
+  # zhihu:                   # username          | https://www.zhihu.com/people/username
+  # goodreads:               # username          | https://www.goodreads.com/user/show/username
+  # strava:                  # useid             | https://www.strava.com/athletes/userid
 
 profile:
   show: true
