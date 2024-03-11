@@ -209,9 +209,9 @@ project:
       tags: The Cooper Union in collaboration with Memorial Sloan Kettering Cancer Center
       date: 2019 - 2020
       description: |
-      + Predicted immune scores, computed through genomics data, from metabolite level to identify significant metabolites in multiregional clear-cell renal cell carcinoma data through random forests
-      + Validated experiment through multi-cohort data from three different studies
-      + Reproduced results by using gene expression levels from RNA sequence data to predict metabolites to cross-validate and generalize findings for different cancer types including breast cancer, colon cancer, prostate cancer, ovarian cancer, and liver cancer
+        + Predicted immune scores, computed through genomics data, from metabolite level to identify significant metabolites in multiregional clear-cell renal cell carcinoma data through random forests
+        + Validated experiment through multi-cohort data from three different studies
+        + Reproduced results by using gene expression levels from RNA sequence data to predict metabolites to cross-validate and generalize findings for different cancer types including breast cancer, colon cancer, prostate cancer, ovarian cancer, and liver cancer
 
     - name: Quantitative Research Internship
       link:
