@@ -94,9 +94,6 @@ education:
   order: 2
   title: Education
   description: |
-    The education section in a resume is where you provide information about your academic background, including any degrees. In this section, you should include the name and location of the institution where you received your degree, the name of the degree or program you completed, and the date of graduation. If you have earned multiple degrees, list them in reverse chronological order, with the most recent degree first.
-
-    In addition to basic information about your education, you may also want to include any academic honors or awards you received, relevant coursework or projects, and your GPA if it is 3.0 or above. If you have recently graduated and do not have much work experience yet, highlighting your education and academic achievements can help demonstrate your potential to succeed in the workplace.
 
   items:
     - institution: Weill Cornell Medicine
@@ -130,20 +127,27 @@ publication:
   show: true
   order: 3
   title: Publications
-  description: |
-    The publication section in a resume is a dedicated section where you can showcase any publications that you have authored or contributed to. This section is particularly relevant for individuals in academic or research fields, but can also be relevant for individuals in other fields who have published articles or papers.
-
-    Publications can include academic journal articles, conference papers, book chapters, reports, or other written works. In this section, you should list the title of the publication, the names of any co-authors, the name of the publication or conference, the date of publication, and any other relevant details.
-
-    If you have a long list of publications, you may want to consider including only the most relevant or significant publications on your resume. Alternatively, you could create a separate publication list and provide it as a separate document, either in your application materials or upon request.
-
-    Including a publication section in your resume can help demonstrate your expertise and credibility in your field, and can help you stand out from other candidates. However, if you do not have any publications to list, it is not necessary to include this section in your resume.
+  description: 
 
   items:
-    - title: Example Publication in Action
-      authors: Foo Bar
-      conference: Foobar, 2019
-      link: '#'
+    - title: Unsupervised discovery of tissue architecture in multiplexed imaging
+      authors: <u>Junbum Kim</u>, Samir Rustam, Juan Miguel Mosquera, Scott H. Randell, Renat Shaykhiev, André F. Rendeiro, Olivier Elemento
+      conference: Nature Methods, 2022
+      link: 'https://www.nature.com/articles/s41592-022-01657-2'
+
+    - title: Epigenetic memory of coronavirus infection in innate immune cells and their progenitors
+      authors: Jin-Gyu Cheong, Arjun Ravishankar, Siddhartha Sharma, et al. 
+      conference: Cell, 2023
+      link: 'https://www.cell.com/cell/pdf/S0092-8674(23)00796-1.pdf'
+
+  description: |
+    Under Revision
+
+  items:
+    - title: . Persistent alveolar type 2 dysfunction and lung structural derangement in post-acute COVID-19
+      authors: André F Rendeiro, Hiranmayi Ravichandran, Junbum Kim, Alain C Borczuk, Olivier Elemento, Robert E Schwartz
+      conference: medRxiv, 2022
+      link: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9727772/'
 
     - title: The Art of Example Publication
       authors: Foo Bar
