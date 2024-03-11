@@ -417,22 +417,39 @@ certificate:
 award:
   show: true
   order: 9
-  title: Awards
+  title: Awards and Scholarships
   description: |
     
   items:
-    - name: Example Awared One
-      awarder: by Example
-      date: 2022
-      link: '#'
-      description: |
-        It's my Example Awared One by Example.
-    - name: Example Awared Two
-      awarder: by Example
-      date: 2022
-      link:
-      description: |
-        It's my Example Awared Two by Example.
+    - name: iDEA-iTECH Awards
+      awarder: Sanofi
+      date: 2024
+      link: 'https://www.sanofi.com/en/our-science/scientific-collaboration/north-america/idea-itech'
+      description: 
+
+    - name: Study Abroad Scholarship
+      awarder: Mogam Science Scholarship Foundation
+      date: 2023
+      link: 'http://www.mogamfoundation.or.kr/board/board_basic_news_type01/board_detail.asp?scrID=0000000214&pageNum=3&subNum=1&ssubNum=1&page=2&bd_num=00000002142023000001&act=view&pyo=0&s_string='
+      description: 
+
+    - name: PBSB Retreat Poster Presentation Award
+      awarder: Weill Cornell Medicine
+      date: 2021
+      link: 
+      description: 
+
+    - name: Eugene Ogur Memorial Award for Excellence in Electrical Engineering
+      awarder: The Cooper Union
+      date: 2020
+      link: 
+      description: 
+
+    - name: Full tuition 
+      awarder: The Cooper Union
+      date: 2013 - 2015, 2017 - 2019
+      link: 
+      description: 
 
 patent:
   show: False
