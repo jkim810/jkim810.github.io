@@ -540,7 +540,7 @@ reference:
       email: foo.one@example.com
       phone: 212-746-5454
       description: |
-        Olivier was my Principal Investigator for PhD.
+        Olivier is currently my Principal Investigator.
 
     - name: Sam Keene
       link: 'https://cooper.edu/academics/people/sam-keene'
