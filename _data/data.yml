@@ -93,7 +93,8 @@ education:
   show: true
   order: 2
   title: Education
-  description: |
+  description: 
+    
 
   items:
     - institution: Weill Cornell Medicine
@@ -142,41 +143,53 @@ publication:
       conference: Cell, 2023
       link: 'https://www.cell.com/cell/pdf/S0092-8674(23)00796-1.pdf'
 
+    - title: A non-invasive artificial intelligence approach for the prediction of human blastocyst ploidy. A retrospective model development and validation study
+      authors: Josue Barnes, Matthew Brendel, Vianne R Gao, Suraj Rajendran, Junbum Kim, et al. 
+      conference: The Lancet Digital Health, 2023
+      link: 'https://www.thelancet.com/journals/landig/article/PIIS2589-7500(22)00213-8/fulltext'
+
+    - title: Insulin feedback is a targetable resistance mechanism of PI3K inhibition in glioblastoma
+      authors: Evan K Noch, Laura N Palma, Isaiah Yim, et al.
+      conference: Neuro-oncology, 2023
+      link: 'https://academic.oup.com/neuro-oncology/article/25/12/2165/7218286'
+
+
+    - title: Spatial omics technologies at multimodal and single cell/subcellular level
+      authors: Jiwoon Park, Junbum Kim, et al. 
+      conference: Genome Biology, 2022
+      link: 'https://link.springer.com/article/10.1186/s13059-022-02824-6'
+
+
+    - title: The spatial landscape of lung pathology during COVID-19 progression
+      authors: André F. Rendeiro, Hiranmayi Ravichandran, Yaron Bram, Vasuretha Chandar, Junbum Kim, et al. 
+      conference: Nature, 2021
+      link: 'https://www.nature.com/articles/s41586-021-03475-6'
+
 
     - title: <Under Revision> Persistent alveolar type 2 dysfunction and lung structural derangement in post-acute COVID-19
       authors: André F Rendeiro, Hiranmayi Ravichandran, Junbum Kim, Alain C Borczuk, Olivier Elemento, Robert E Schwartz
       conference: medRxiv, 2022
       link: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9727772/'
 
-    - title: The Art of Example Publication
-      authors: Foo Bar
-      conference: Foobar, 2019
-      link:
-
-project:
+research experience:
   show: true
   order: 4
   title: Projects
-  description: |
-    The project section in a resume is a section where you can highlight any significant projects that you have completed during your education, work experience, or personal endeavors. This section provides a detailed description of your projects that can showcase your skills, abilities, and achievements.
-
-    In this section, you should include the name of the project, the role you played in the project, the duration, the tools and technologies you used, the objective of the project, and the outcome or result achieved. You can also include any relevant metrics or data that demonstrate the impact of the project.
-
-    The project section is especially useful for candidates with limited work experience or those looking to highlight specific skills or accomplishments that may not be apparent in other parts of their resume. It can also be beneficial for candidates in technical or creative fields, where projects play a significant role in showcasing their capabilities.
+  description: 
 
   items:
-    - name: Personal project
-      link: '#'
-      tags:
-      date: 2015 - 2017
+    - name: Unsupervised Discovery of Tissue Architecture and Cross-Talks in Multiplexed Imaging for Biomarker Discovery and Assessment of Mechanisms of Drug Action
+      link: 
+      tags: Weill Cornell Medicine in collaboration with Sanofi
+      date: 2021, 2024
       description: |
-        Personal project description...
-        + First
-        + Second
+        + Developed graph-based clustering method to identify tissue microanatomy from highly multiplexed tissue slide images such as Imaging Mass Cytometry or Cyclic-Immunofluorescence, spatial transcriptomics such as Xenium, and traditional H&E images
+        + Quantified how cellular structures collapse and lose compartmentalization in diseased conditions such as COVID-19
+        + Shared expertise with R&D team in Sanofi on how to segment cells and analyze cellular niches with multiplexed imaging 
 
-    - name: OSS project
+    - name: Spatial landscape of ground-glass opacity (GGO) in early-stage lung adenocarcinoma progression
       link:
-      tags: committer
+      tags: Weill Cornell Medicine in collaboration with Johnson & Johnson
       date:
       description: |
         OSS project description...
