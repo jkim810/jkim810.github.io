@@ -84,7 +84,7 @@ profile:
   title: Profile
   description: |
     I am a PhD Candidate in Physiology, Biophysics, and Systems Biology program at Weill Cornell Medicine. 
-    For the past four years, I have been working with Olivier Elemento, principal investigator and director of New Englander Institute of Precision Medicine.
+    For the past four years, I have been working with Olivier Elemento, principal investigator and director of Englander Institute for Precision Medicine.
     
     I identify myself as a biostatistician, spatial biolist, and a machine learner.
     My interests are in applying spatial multiomics and machine learning to characterize tumors, stratify patients, and to eventually come up with optimal treatment strategies.
@@ -128,9 +128,8 @@ publication:
   show: true
   order: 3
   title: Publications
-  description: 
+  # description: 
     
-
   items:
 
     - title: Unsupervised discovery of tissue architecture in multiplexed imaging
@@ -175,7 +174,7 @@ project:
   show: true
   order: 4
   title: Research Experiences
-  description: 
+  # description: 
 
   items:
     - name: Unsupervised Discovery of Tissue Architecture and Cross-Talks in Multiplexed Imaging for Biomarker Discovery and Assessment of Mechanisms of Drug Action
@@ -262,31 +261,7 @@ skill:
   # description: |
   #   The skills section in a resume is a dedicated section where you can list out the various skills that you possess that are relevant to the job you are applying for. This section allows you to highlight your strengths and demonstrate your capabilities to potential employers.
 
-  #   The skills section can include both hard skills and soft skills. Hard skills are specific technical abilities or knowledge related to a particular job or industry, such as proficiency in programming languages or experience with certain software programs. Soft skills are more general personal traits and abilities, such as communication skills, leadership, problem-solving, or teamwork.
 
-  #   When crafting your skills section, it's important to tailor it to the specific job you are applying for, and only include skills that are relevant to the position. This can help catch the attention of the hiring manager and demonstrate that you have the qualifications necessary to succeed in the role.
-
-  #   There are multiple ways to present your skills here. One way is to show them in a rating format. Another way is to group them together. Alternatively, you can use markdown to format it in a way that you prefer.
-
-  # items:
-  #   - name: Skill A
-  #     level: 5
-  #   - name: Skill B
-  #     level: 4
-  #   - name: Skill C
-  #     level: 3
-  #   - name: Skill D
-  #     level: 4
-  #   - name: Skill E
-  #     level: 3
-  #   - name: Skill F
-  #     level: 1
-  #   - name: Skill G
-  #     level: 4
-  #   - name: Skill H
-  #     level: 4
-  #   - name: Skill I
-  #     level: 3
 
   groups:
     - name: Programming Languages
@@ -448,23 +423,15 @@ reference:
   show: true
   order: 14
   title: References
-  description: |
-    A reference section in a resume is a list of individuals who can vouch for your skills, work ethic, and character. These individuals are typically former managers, colleagues, or mentors who have worked closely with you in the past and can provide insight into your abilities and work style.
-
-    It's important to note that including a reference section in a resume is not always necessary, and some employers may prefer to request references separately. If you do choose to include a reference section, it should typically be located at the end of your resume.
-
-    When listing references, be sure to include the individual's name, job title, company name, phone number, and email address. It's also a good idea to ask for the individual's permission before listing them as a reference, and to let them know what kind of job you are applying for so they can speak to your relevant skills and experience.
-
-    It's important to choose references who can provide a positive and comprehensive evaluation of your work. Avoid listing family members or friends as references, and instead focus on individuals who can speak to your professional abilities and accomplishments.
 
   items:
-    - name: Foo One
+    - name: Olivier Elemento
       link: '#'
-      title: Backend Developer
-      institution: Second Company
-      address: 1234 Example St, XXX, XY 11111
+      title: Principal Investigator and Director of Englander Institute for Precision Medicine
+      institution: Weill Cornell Medicine
+      address: 1300 York Avenue, New York, NY, 10065
       email: foo.one@example.com
-      phone: 111-222-333
+      phone: 212-746-5454
       description: |
         Foo One was my colleague in Second Company.
 
