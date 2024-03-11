@@ -83,12 +83,7 @@ profile:
   order: 1
   title: Profile
   description: |
-    I am a PhD Candidate in Physiology, Biophysics, and Systems Biology program at Weill Cornell Medicine. 
-    For the past four years, I have been working with Olivier Elemento, principal investigator and director of Englander Institute for Precision Medicine.
-    
-    I identify myself as a biostatistician, spatial biologist, and a machine learner.
-    My interests are in applying spatial biology and machine learning to characterize tumors, stratify patients, and to eventually come up with optimal treatment strategies.
-
+    I am a passionate and curious graduate student researcher at Weill Cornell Medicine. My mission is to apply my skills in bioinformatics and machine learning to advance the field of spatial biology. I am excited to be part of the Elemento Lab, where I can collaborate with diverse and talented researchers, learn from cutting-edge technologies, and contribute to precision medicine research for various range of diseases including COVID-19 and cancers.
 education:
   show: true
   order: 2
