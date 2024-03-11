@@ -213,17 +213,6 @@ project:
         + Validated experiment through multi-cohort data from three different studies
         + Reproduced results by using gene expression levels from RNA sequence data to predict metabolites to cross-validate and generalize findings for different cancer types including breast cancer, colon cancer, prostate cancer, ovarian cancer, and liver cancer
 
-    - name: Quantitative Research Internship
-      link: 'https://millburn.com/'
-      tags: Millburn Ridgefield Corporation
-      date: Summer 2019
-      description: |
-        + Explored dimensionality reduction algorithms such as principal component analysis, autoencoders, T-stochastic neighborhood embedding, and uniform manifold approximation and projection to test their robustness to noise
-        + Investigated how each algorithm performs for various datasets with different number of samples and features including iris petal data (150 samples, 4 features), Parkinson disease data (240 samples, 46 features), and the MNIST digits data (60,000 samples, 768 features)
-        + Simulated how noise affects these algorithms by injecting gaussian noise
-        + Applied dimensionality reduction algorithms on time-series financial data to select useful features and to analyze the futures market
-
-
 experience:
   show: true
   order: 5
@@ -231,6 +220,18 @@ experience:
   description: 
 
   items:
+    - company: Millburn Ridgefield Corporation
+      link: 'https://millburn.com/'
+      tags: Full-time
+      date: Summer 2019
+      role: Quantitative Research Internship
+      location: New York, United States
+      description: |
+        + Explored dimensionality reduction algorithms such as principal component analysis, autoencoders, T-stochastic neighborhood embedding, and uniform manifold approximation and projection to test their robustness to noise
+        + Investigated how each algorithm performs for various datasets with different number of samples and features including iris petal data (150 samples, 4 features), Parkinson disease data (240 samples, 46 features), and the MNIST digits data (60,000 samples, 768 features)
+        + Simulated how noise affects these algorithms by injecting gaussian noise
+        + Applied dimensionality reduction algorithms on time-series financial data to select useful features and to analyze the futures market
+
     - company: The Cooper Union
       link: 'https://cooper.edu/welcome'
       tags: Part-time
