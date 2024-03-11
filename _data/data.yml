@@ -144,7 +144,7 @@ publication:
       link: 'https://www.cell.com/cell/pdf/S0092-8674(23)00796-1.pdf'
 
     - title: A non-invasive artificial intelligence approach for the prediction of human blastocyst ploidy. A retrospective model development and validation study
-      authors: Josue Barnes, Matthew Brendel, Vianne R Gao, Suraj Rajendran, Junbum Kim, et al. 
+      authors: Josue Barnes, Matthew Brendel, Vianne R Gao, Suraj Rajendran, <u>Junbum Kim</u>, et al. 
       conference: The Lancet Digital Health, 2023
       link: 'https://www.thelancet.com/journals/landig/article/PIIS2589-7500(22)00213-8/fulltext'
 
@@ -155,23 +155,23 @@ publication:
 
 
     - title: Spatial omics technologies at multimodal and single cell/subcellular level
-      authors: Jiwoon Park, Junbum Kim, et al. 
+      authors: Jiwoon Park, <u>Junbum Kim</u>, et al. 
       conference: Genome Biology, 2022
       link: 'https://link.springer.com/article/10.1186/s13059-022-02824-6'
 
 
     - title: The spatial landscape of lung pathology during COVID-19 progression
-      authors: André F. Rendeiro, Hiranmayi Ravichandran, Yaron Bram, Vasuretha Chandar, Junbum Kim, et al. 
+      authors: André F. Rendeiro, Hiranmayi Ravichandran, Yaron Bram, Vasuretha Chandar, <u>Junbum Kim</u>, et al. 
       conference: Nature, 2021
       link: 'https://www.nature.com/articles/s41586-021-03475-6'
 
 
-    - title: <Under Revision> Persistent alveolar type 2 dysfunction and lung structural derangement in post-acute COVID-19
-      authors: André F Rendeiro, Hiranmayi Ravichandran, Junbum Kim, Alain C Borczuk, Olivier Elemento, Robert E Schwartz
+    - title: <i>Under Revision</i> | Persistent alveolar type 2 dysfunction and lung structural derangement in post-acute COVID-19
+      authors: André F Rendeiro, Hiranmayi Ravichandran, <u>Junbum Kim</u>, Alain C Borczuk, Olivier Elemento, Robert E Schwartz
       conference: medRxiv, 2022
       link: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9727772/'
 
-research experience:
+researches:
   show: true
   order: 4
   title: Projects
