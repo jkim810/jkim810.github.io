@@ -165,7 +165,7 @@ publication:
       link: 'https://www.nature.com/articles/s41586-021-03475-6'
 
 
-    - title: <i>Under Revision</i> | Persistent alveolar type 2 dysfunction and lung structural derangement in post-acute COVID-19
+    - title: <i>Preprint</i> | Persistent alveolar type 2 dysfunction and lung structural derangement in post-acute COVID-19
       authors: André F Rendeiro, Hiranmayi Ravichandran, <u>Junbum Kim</u>, Alain C Borczuk, Olivier Elemento, Robert E Schwartz
       conference: medRxiv, 2022
       link: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9727772/'
@@ -179,7 +179,7 @@ project:
   items:
     - name: Unsupervised Discovery of Tissue Architecture and Cross-Talks in Multiplexed Imaging for Biomarker Discovery and Assessment of Mechanisms of Drug Action
       link: 
-      tags: Weill Cornell Medicine <i>in collaboration with</i> Sanofi
+      tags: WCM <i> with</i> Sanofi
       date: 2021, 2024
       description: |
         + Developed graph-based clustering method to identify tissue microanatomy from highly multiplexed tissue slide images such as Imaging Mass Cytometry or Cyclic-Immunofluorescence, spatial transcriptomics such as Xenium, and traditional H&E images
@@ -188,7 +188,7 @@ project:
 
     - name: Spatial landscape of ground-glass opacity (GGO) in early-stage lung adenocarcinoma progression
       link:
-      tags: Weill Cornell Medicine <i>in collaboration with</i> Johnson & Johnson
+      tags: WCM <i> with</i> Johnson & Johnson
       date: 2022 - 2024
       description: |
         + Analyzed the molecular and spatial context of GGO in early-stage lung adenocarcinoma (LUAD) using imaging mass cytometry to better understand the basis for which clinical decisions are made on Computer Tomography (CT) images
@@ -197,7 +197,7 @@ project:
 
     - name: In-Vitro Fertilization. Ploidy Status Assessment in Day-6 Blastocysts through Machine Learning
       link:
-      tags: Weill Cornell Medicine
+      tags: WCM
       date: Fall 2020
       description: |
         + Assessed quality of embryo through machine learning to cut financial cost, time spent, and potential threat to embryo by employing an imaging based non-invasive method using EfficientNet
@@ -206,7 +206,7 @@ project:
 
     - name: Bridging Metabolomics and Genomics across different Cancer types
       link:
-      tags: The Cooper Union <i>in collaboration with</i> MSKCC
+      tags: The Cooper Union <i> with</i> MSKCC
       date: 2019 - 2020
       description: |
         + Predicted immune scores, computed through genomics data, from metabolite level to identify significant metabolites in multiregional clear-cell renal cell carcinoma data through random forests
