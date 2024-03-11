@@ -128,8 +128,10 @@ publication:
   order: 3
   title: Publications
   description: 
+    
 
   items:
+
     - title: Unsupervised discovery of tissue architecture in multiplexed imaging
       authors: <u>Junbum Kim</u>, Samir Rustam, Juan Miguel Mosquera, Scott H. Randell, Renat Shaykhiev, André F. Rendeiro, Olivier Elemento
       conference: Nature Methods, 2022
@@ -140,11 +142,8 @@ publication:
       conference: Cell, 2023
       link: 'https://www.cell.com/cell/pdf/S0092-8674(23)00796-1.pdf'
 
-  description: |
-    Under Revision
 
-  items:
-    - title: . Persistent alveolar type 2 dysfunction and lung structural derangement in post-acute COVID-19
+    - title: <Under Revision> Persistent alveolar type 2 dysfunction and lung structural derangement in post-acute COVID-19
       authors: André F Rendeiro, Hiranmayi Ravichandran, Junbum Kim, Alain C Borczuk, Olivier Elemento, Robert E Schwartz
       conference: medRxiv, 2022
       link: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9727772/'
