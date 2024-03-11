@@ -307,7 +307,7 @@ experience:
         + Developed programs that edit virtual machine registries with object-oriented programming in Python
         + Compiled programs that parse computer statistics from cpustats, iostats, and vmstats in the CentOS
 
-project:
+project2:
   show: true
   order: 6
   title: Projects
