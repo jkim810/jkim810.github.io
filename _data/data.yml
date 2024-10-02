@@ -1,6 +1,6 @@
 basic:
   name: Junbum Kim                      # name
-  title: PhD Candidate @ Weill Cornell Medicine           # job title
+  title: Postdoctoral Associate @ Weill Cornell Medicine           # job title
   avatar:
     show: true                       # show or hide avatar
     path: /assets/images/profile.jpg # avatar file path
@@ -83,7 +83,7 @@ profile:
   order: 1
   title: Profile
   description: |
-    I am a passionate and curious graduate student researcher at Weill Cornell Medicine. My mission is to apply my skills in bioinformatics and machine learning to advance the field of spatial biology. I am excited to be part of the Elemento Lab, where I can collaborate with diverse and talented researchers, learn from cutting-edge technologies, and contribute to precision medicine research for various range of diseases including COVID-19 and cancers.
+    I am a passionate and curious researcher at Weill Cornell Medicine. My mission is to apply my skills in spatial biology and machine learning to advance the field of computational oncology. I am excited to be part of the Elemento Lab, where I can collaborate with diverse and talented researchers, learn from cutting-edge technologies, and contribute to precision medicine research.
 education:
   show: true
   order: 2
@@ -94,11 +94,11 @@ education:
   items:
     - institution: Weill Cornell Medicine
       link: 'https://weill.cornell.edu/'
-      date: 2020 - Present, Projected May 2024
+      date: 2020 - 2024
       major: Physiology, Biophysics, and Systems Biology
       degree: Doctoral
       description: |
-        + Principal Investigator: Olivier Elemento
+        + Principal Investigator: Olivier Elemento (Director of Englander Institute of Precision Medicine)
 
     - institution: The Cooper Union for the Advancement of Science and Art
       link: 'https://cooper.edu/welcome'
@@ -127,10 +127,10 @@ publication:
     
   items:
 
-    - title: Unsupervised discovery of tissue architecture in multiplexed imaging
-      authors: <u>Junbum Kim</u>, Samir Rustam, Juan Miguel Mosquera, Scott H. Randell, Renat Shaykhiev, André F. Rendeiro, Olivier Elemento
-      conference: Nature Methods, 2022
-      link: 'https://www.nature.com/articles/s41592-022-01657-2'
+    - title: Multi-parametric atlas of the pre-metastatic liver for prediction of metastatic outcome in early-stage pancreatic cancer
+      authors: Linda Bojmar, Constantinos P. Zambirinis, Jonathan M. Hernandez, Jayasree Chakraborty, Lee Shaashua, <u>Junbum Kim</u>, et al.
+      conference: Nature Medicine, 2024
+      link: 'https://www.nature.com/articles/s41591-024-03075-7'
 
     - title: Epigenetic memory of coronavirus infection in innate immune cells and their progenitors
       authors: Jin-Gyu Cheong, Arjun Ravishankar, Siddhartha Sharma, et al. 
@@ -147,12 +147,15 @@ publication:
       conference: Neuro-oncology, 2023
       link: 'https://academic.oup.com/neuro-oncology/article/25/12/2165/7218286'
 
+    - title: Unsupervised discovery of tissue architecture in multiplexed imaging
+      authors: <u>Junbum Kim</u>, Samir Rustam, Juan Miguel Mosquera, Scott H. Randell, Renat Shaykhiev, André F. Rendeiro, Olivier Elemento
+      conference: Nature Methods, 2022
+      link: 'https://www.nature.com/articles/s41592-022-01657-2'
 
     - title: Spatial omics technologies at multimodal and single cell/subcellular level
       authors: Jiwoon Park, <u>Junbum Kim</u>, et al. 
       conference: Genome Biology, 2022
       link: 'https://link.springer.com/article/10.1186/s13059-022-02824-6'
-
 
     - title: The spatial landscape of lung pathology during COVID-19 progression
       authors: André F. Rendeiro, Hiranmayi Ravichandran, Yaron Bram, Vasuretha Chandar, <u>Junbum Kim</u>, et al. 
@@ -160,10 +163,22 @@ publication:
       link: 'https://www.nature.com/articles/s41586-021-03475-6'
 
 
+    - title: <i>Preprint</i> | Integrative Transcriptomic and Single-Cell Protein Characterization of Colorectal Carcinoma Delineates Distinct Tumor Immune Microenvironments Associated with Overall Survival
+      authors: Erika Hissong, Bhavneet Bhinder, <u>Junbum Kim</u>, Kentaro Ohara, Hiranmayi Ravichandran, et al.
+      conference: Research Square, 2024
+      link: 'https://www.researchsquare.com/article/rs-4751101/v1'
+
+    - title: <i>Preprint</i> | HLA-E and NKG2A Mediate Resistance to M. bovis BCG Immunotherapy in Non-Muscle-Invasive Bladder Cancer
+      authors: Ranti D, et al.
+      conference: bioRxiv, 2024
+      link: 'https://pubmed.ncbi.nlm.nih.gov/39282294/'
+
     - title: <i>Preprint</i> | Persistent alveolar type 2 dysfunction and lung structural derangement in post-acute COVID-19
       authors: André F Rendeiro, Hiranmayi Ravichandran, <u>Junbum Kim</u>, Alain C Borczuk, Olivier Elemento, Robert E Schwartz
       conference: medRxiv, 2022
       link: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9727772/'
+
+
 
 project:
   show: true
