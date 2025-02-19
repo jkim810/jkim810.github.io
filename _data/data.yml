@@ -84,13 +84,13 @@ profile:
   title: Profile
   description: |
     I am a passionate and curious researcher at Weill Cornell Medicine. My mission is to apply my skills in spatial biology and machine learning to advance the field of computational oncology. I am excited to be part of the Elemento Lab, where I can collaborate with diverse and talented researchers, learn from cutting-edge technologies, and contribute to precision medicine research.
+
+
 education:
   show: true
   order: 2
   title: Education
   description: 
-    
-
   items:
     - institution: Weill Cornell Medicine
       link: 'https://weill.cornell.edu/'
@@ -124,7 +124,6 @@ publication:
   order: 3
   title: Publications
   description: 
-    
   items:
 
     - title: Multi-parametric atlas of the pre-metastatic liver for prediction of metastatic outcome in early-stage pancreatic cancer
@@ -162,6 +161,16 @@ publication:
       conference: Nature, 2021
       link: 'https://www.nature.com/articles/s41586-021-03475-6'
 
+      ### PREPRINTS ###
+    - title: <i>Preprint</i> | Simultaneous immunomodulation and epithelial-to-mesenchymal transition drives early-stage lung adenocarcinoma progression
+      authors: <u>Kim.</u> et Al.
+      conference: bioRxiv, 2025
+      link: ''
+
+    - title: <i>Preprint</i> | Acquisition of discrete immune suppressive barriers contribute to the initiation and progression of preinvasive to invasive human lung cancer
+      authors: Yoffe D, et al.
+      conference: bioRxiv, 2024
+      link: 'https://www.biorxiv.org/content/10.1101/2024.12.31.630523v1'
 
     - title: <i>Preprint</i> | Integrative Transcriptomic and Single-Cell Protein Characterization of Colorectal Carcinoma Delineates Distinct Tumor Immune Microenvironments Associated with Overall Survival
       authors: Erika Hissong, Bhavneet Bhinder, <u>Junbum Kim</u>, Kentaro Ohara, Hiranmayi Ravichandran, et al.
@@ -296,16 +305,6 @@ experience:
         + Guarded national assembly of Korea from protesters and aided visitors to their desired destination
         + Worked in the administrative department and operated computer center for coworkers
 
-    - company: Edonation Project
-      link: 
-      tags: Part-time
-      date: 2015 - 2017
-      role: Instructor
-      location: New York, NY
-      description: |
-        + Instructed AP Calculus BC to high school students in the greater New York area
-        + Participated in weekly meetings in Columbia University to consider ways to share talent and knowledge in the professional domain as a social service 
-
     - company: 3S Soft
       link: 
       tags: Full-time
@@ -369,15 +368,6 @@ project2:
         + Deployed login authentication system using express-sessions and bcrypt library to protect confidential data of the customers
         + Uploaded program onto a server and deployed the product so that it could be accessed across the web
 
-
-    - name: Othello
-      link:
-      tags: Artificial Intelligence
-      date: Fall 2017
-      description: |
-        + Programmed Othello (Reversi), a two-player strategy board game in Java
-        + Implemented iterative deepening search using minimax tree and an alpha-beta pruning algorithm to program a rational agent that would outplay human players within a given time
-
     - name: Pete’s Beats
       link:
       tags: Engineering Design and Problem Solving
@@ -403,8 +393,7 @@ skill:
     - name: Biostatistics
       item:
         - Computational Biology
-        - Spatial Biology
-        - Multiomics
+        - Spatial Multiomics
     - name: Machine Learning / Artificial Intelligence
       item:
         - Tensorflow
@@ -426,7 +415,6 @@ certificate:
   title: Certificates
   description: |
     
-
   items:
     - name: Example Certificate One
       issuer: by Example
