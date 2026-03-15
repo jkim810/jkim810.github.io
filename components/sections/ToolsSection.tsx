@@ -1,9 +1,11 @@
 import { tools } from '@/data/tools';
+import { SectionHeading } from '@/components/SectionHeading';
 
 export default function ToolsSection() {
   return (
     <section id="tools" className="scroll-mt-20 border-t border-[#f0f0f0] pt-8">
-      <h2 className="text-2xl font-bold text-[#111] mb-4">Tools</h2>
+      <SectionHeading label="TOOLS" title="Software & Tools" />
+      <div className="pl-[146px]">
       <div className="space-y-6">
         {tools.map((tool, i) => (
           <div key={i}>
@@ -35,6 +37,7 @@ export default function ToolsSection() {
             </div>
           </div>
         ))}
+      </div>
       </div>
     </section>
   );

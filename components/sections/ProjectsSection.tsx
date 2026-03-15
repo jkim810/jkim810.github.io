@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { projects } from '@/data/projects';
 import { ProjectFilter } from '@/components/ProjectFilter';
+import { SectionHeading } from '@/components/SectionHeading';
 
 // Derive unique tags from all projects
 const allTags = Array.from(new Set(projects.flatMap((p) => p.tags))).sort();
@@ -13,7 +14,8 @@ export default function ProjectsSection() {
 
   return (
     <section id="projects" className="scroll-mt-20 border-t border-[#f0f0f0] pt-8">
-      <h2 className="text-2xl font-bold text-[#111] mb-4">Projects</h2>
+      <SectionHeading label="PROJECTS" title="Active Research" />
+      <div className="pl-[146px]">
       <ProjectFilter tags={allTags} selected={selected} onSelect={setSelected} />
       {filtered.length === 0 ? (
         <p className="text-[#6b7280]">No projects found.</p>
@@ -54,6 +56,7 @@ export default function ProjectsSection() {
           ))}
         </div>
       )}
+      </div>
     </section>
   );
 }
