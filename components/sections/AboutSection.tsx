@@ -40,6 +40,16 @@ export default function AboutSection() {
             graph-based tissue analysis — translating high-dimensional biological data into
             clinically interpretable findings.
           </p>
+          <p className="mt-4 text-base text-[#111]">
+            My research sits at the intersection of spatial biology and computational oncology.
+            I build and apply methods — graph-based tissue analysis, deep learning for digital
+            pathology, and multi-modal spatial omics pipelines — to decode how the tumor
+            microenvironment is organized and how that organization drives cancer progression
+            and treatment resistance. A central question in my work is how immune and stromal
+            cell communities are spatially coordinated in solid tumors, and what those patterns
+            predict about clinical outcome. Alongside this, I develop open-source tools that
+            make high-dimensional spatial data accessible to the broader cancer biology community.
+          </p>
         </div>
       </EditorialGrid>
     </section>
