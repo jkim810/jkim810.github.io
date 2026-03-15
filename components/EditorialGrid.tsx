@@ -9,7 +9,7 @@ export function EditorialGrid({ marginContent, children }: EditorialGridProps) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-[130px_1fr] gap-0">
       {/* Left margin column */}
-      <div className="overflow-hidden whitespace-nowrap text-ellipsis max-w-[130px] text-right pr-4 text-sm text-gray-400 md:block">
+      <div className="hidden md:block overflow-hidden whitespace-nowrap text-ellipsis max-w-[130px] text-right pr-4 text-sm text-gray-400">
         {marginContent}
       </div>
       {/* Right content column with spine */}
