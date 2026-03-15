@@ -13,9 +13,9 @@ const NAV_LINKS = [
   { label: 'Publications', href: '/#publications', id: 'publications' },
   { label: 'Projects', href: '/#projects', id: 'projects' },
   { label: 'News', href: '/#news', id: 'news' },
-  { label: 'Blog', href: '/blog', id: 'blog' },
+  // TODO: re-add Blog once content is ready — { label: 'Blog', href: '/blog', id: 'blog' },
   { label: 'Tools', href: '/#tools', id: 'tools' },
-  { label: 'Talks', href: '/#talks', id: 'talks' },
+  // TODO: re-add Talks once populated — { label: 'Talks', href: '/#talks', id: 'talks' },
   { label: 'Contact', href: '/#contact', id: 'contact' },
 ];
 
@@ -31,17 +31,17 @@ const SOCIAL_LINKS = [
     Icon: LinkedInIcon,
   },
   {
-    href: 'https://twitter.com/jkim810',
-    label: 'Twitter',
+    href: 'https://x.com/junbum_kim',
+    label: 'X',
     Icon: TwitterIcon,
   },
   {
-    href: 'https://orcid.org/0000-0000-0000-0000',
+    href: 'https://orcid.org/0000-0001-7344-1593',
     label: 'ORCID',
     Icon: OrcidIcon,
   },
   {
-    href: 'https://scholar.google.com/citations?user=jkim810',
+    href: 'https://scholar.google.com/citations?user=gdjxtusAAAAJ&hl=en',
     label: 'Google Scholar',
     Icon: GoogleScholarIcon,
   },
@@ -53,7 +53,8 @@ interface SidebarProps {
 
 export function Sidebar({ activeSection }: SidebarProps) {
   return (
-    <aside className="w-[240px] h-screen fixed left-0 top-0 border-r border-gray-100 flex flex-col px-6 py-8">
+    <aside className="w-[240px] h-screen fixed left-0 top-0 flex flex-col px-6 py-8"
+      style={{ background: '#f1f5f9', borderRight: '1px solid #e2e8f0' }}>
       {/* Profile */}
       <div className="flex flex-col items-center gap-3 mb-8">
         <Image
@@ -65,9 +66,9 @@ export function Sidebar({ activeSection }: SidebarProps) {
           priority
         />
         <div className="text-center">
-          <p className="font-semibold text-sm text-gray-900">Junbum Kim</p>
-          <p className="text-xs text-gray-500 mt-0.5">Postdoctoral Associate</p>
-          <p className="text-xs text-gray-500">Weill Cornell Medicine</p>
+          <p className="font-semibold text-sm" style={{ color: '#0f172a' }}>Junbum Kim</p>
+          <p className="text-xs mt-0.5" style={{ color: '#475569' }}>Postdoctoral Associate</p>
+          <p className="text-xs" style={{ color: '#475569' }}>Weill Cornell Medicine</p>
         </div>
       </div>
 
@@ -79,12 +80,8 @@ export function Sidebar({ activeSection }: SidebarProps) {
             <Link
               key={id}
               href={href}
-              className={`text-sm px-2 py-1.5 rounded transition-colors duration-150 ${
-                isActive
-                  ? 'text-blue-600 font-semibold'
-                  : 'text-gray-700 hover:text-gray-900'
-              }`}
-              style={isActive ? { color: '#2563eb' } : undefined}
+              className="text-sm px-2 py-1.5 rounded transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-[#2563eb] focus:ring-offset-1"
+              style={{ color: isActive ? '#2563eb' : '#334155', fontWeight: isActive ? 600 : 400 }}
             >
               {label}
             </Link>
@@ -101,7 +98,7 @@ export function Sidebar({ activeSection }: SidebarProps) {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={label}
-            className="text-gray-400 hover:text-gray-700 transition-colors duration-150"
+            className="text-[#64748b] hover:text-[#334155] transition-colors duration-150"
           >
             <Icon />
           </a>

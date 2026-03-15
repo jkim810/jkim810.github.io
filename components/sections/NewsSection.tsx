@@ -15,7 +15,7 @@ export default function NewsSection() {
   const news = yaml.load(raw) as NewsItem[];
 
   return (
-    <section id="news" className="scroll-mt-20 border-t border-[#f0f0f0] pt-8">
+    <section id="news" className="scroll-mt-16 md:scroll-mt-20 border-t border-[#f0f0f0] pt-8">
       <EditorialGrid
         marginContent={
           <span className="uppercase tracking-wide text-xs text-gray-400">NEWS</span>

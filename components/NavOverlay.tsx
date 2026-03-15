@@ -7,9 +7,8 @@ const NAV_LINKS = [
   { label: 'Publications', href: '/#publications', id: 'publications' },
   { label: 'Projects', href: '/#projects', id: 'projects' },
   { label: 'News', href: '/#news', id: 'news' },
-  { label: 'Blog', href: '/blog', id: 'blog' },
+  // TODO: re-add Blog and Talks once content is ready
   { label: 'Tools', href: '/#tools', id: 'tools' },
-  { label: 'Talks', href: '/#talks', id: 'talks' },
   { label: 'Contact', href: '/#contact', id: 'contact' },
 ];
 
@@ -46,12 +45,11 @@ export function NavOverlay({ isOpen, onClose, activeSection }: NavOverlayProps) 
               key={id}
               href={href}
               onClick={onClose}
-              className={`text-lg px-2 py-1 ${
+              className={`text-lg px-2 py-1 focus:outline-none focus:ring-2 focus:ring-[#2563eb] ${
                 isActive
                   ? 'text-blue-600 font-semibold'
                   : 'text-gray-700 hover:text-gray-900'
               }`}
-              style={isActive ? { color: '#2563eb' } : undefined}
             >
               {label}
             </Link>

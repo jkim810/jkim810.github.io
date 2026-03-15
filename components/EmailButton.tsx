@@ -14,7 +14,7 @@ export function EmailButton({ label, reversed }: Props) {
   return (
     <button
       onClick={handleClick}
-      className="px-6 py-3 border border-[#2563eb] text-[#2563eb] text-sm font-medium hover:bg-[#2563eb] hover:text-white transition-colors"
+      className="px-6 py-3 border border-[#2563eb] text-[#2563eb] text-sm font-medium hover:bg-[#2563eb] hover:text-white transition-colors rounded focus:ring-2 focus:ring-[#2563eb] focus:ring-offset-2 focus:outline-none"
     >
       {label} →
     </button>

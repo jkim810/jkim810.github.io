@@ -9,9 +9,9 @@ export const PERSONAL_EMAIL_REVERSED = 'moc.liamg@0180mikj';
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="scroll-mt-20 border-t border-[#f0f0f0] pt-8">
+    <section id="contact" className="scroll-mt-16 md:scroll-mt-20 border-t border-[#f0f0f0] pt-8">
       <SectionHeading label="CONTACT" title="Get in Touch" />
-      <div className="pl-[146px] flex flex-wrap gap-4">
+      <div className="pl-[146px] mt-6 flex flex-wrap gap-4">
         <EmailButton label="Work Email" reversed={WORK_EMAIL_REVERSED} />
         <EmailButton label="Personal Email" reversed={PERSONAL_EMAIL_REVERSED} />
       </div>

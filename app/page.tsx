@@ -3,7 +3,8 @@ import PublicationsSection from '@/components/sections/PublicationsSection';
 import ProjectsSection from '@/components/sections/ProjectsSection';
 import NewsSection from '@/components/sections/NewsSection';
 import ToolsSection from '@/components/sections/ToolsSection';
-import TalksSection from '@/components/sections/TalksSection';
+// TODO: re-enable TalksSection once talk entries are populated
+// import TalksSection from '@/components/sections/TalksSection';
 import ContactSection from '@/components/sections/ContactSection';
 
 export default function HomePage() {
@@ -14,7 +15,7 @@ export default function HomePage() {
       <ProjectsSection />
       <NewsSection />
       <ToolsSection />
-      <TalksSection />
+      {/* <TalksSection /> */}
       <ContactSection />
     </div>
   );

@@ -3,4 +3,5 @@ module.exports = {
   siteUrl: process.env.SITE_URL || 'https://jkim810.github.io',
   generateRobotsTxt: true,
   outDir: './public',
+  exclude: ['/blog', '/blog/*'],
 };

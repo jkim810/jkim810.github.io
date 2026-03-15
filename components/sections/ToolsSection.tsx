@@ -1,15 +1,15 @@
 import { tools } from '@/data/tools';
 import { SectionHeading } from '@/components/SectionHeading';
+import { EditorialGrid } from '@/components/EditorialGrid';
 
 export default function ToolsSection() {
   return (
-    <section id="tools" className="scroll-mt-20 border-t border-[#f0f0f0] pt-8">
+    <section id="tools" className="scroll-mt-16 md:scroll-mt-20 border-t border-[#f0f0f0] pt-8">
       <SectionHeading label="TOOLS" title="Software & Tools" />
-      <div className="pl-[146px]">
-      <div className="space-y-6">
+      <div className="mt-6 space-y-6">
         {tools.map((tool, i) => (
-          <div key={i}>
-            <div className="flex items-start justify-between gap-4">
+          <EditorialGrid key={i} marginContent={null}>
+            <div className="flex items-start justify-between gap-4 hover:-translate-y-0.5 transition-transform duration-150">
               <div>
                 <div className="font-bold text-[#111]">{tool.name}</div>
                 <div className="mt-1 text-sm text-[#6b7280]">{tool.description}</div>
@@ -35,9 +35,8 @@ export default function ToolsSection() {
                 </a>
               )}
             </div>
-          </div>
+          </EditorialGrid>
         ))}
-      </div>
       </div>
     </section>
   );

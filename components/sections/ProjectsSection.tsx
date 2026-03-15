@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { projects } from '@/data/projects';
 import { ProjectFilter } from '@/components/ProjectFilter';
 import { SectionHeading } from '@/components/SectionHeading';
+import { EditorialGrid } from '@/components/EditorialGrid';
 
 // Derive unique tags from all projects
 const allTags = Array.from(new Set(projects.flatMap((p) => p.tags))).sort();
@@ -13,20 +14,20 @@ export default function ProjectsSection() {
   const filtered = selected ? projects.filter((p) => p.tags.includes(selected)) : projects;
 
   return (
-    <section id="projects" className="scroll-mt-20 border-t border-[#f0f0f0] pt-8">
+    <section id="projects" className="scroll-mt-16 md:scroll-mt-20 border-t border-[#f0f0f0] pt-8">
       <SectionHeading label="PROJECTS" title="Active Research" />
-      <div className="pl-[146px]">
-      <ProjectFilter tags={allTags} selected={selected} onSelect={setSelected} />
-      {filtered.length === 0 ? (
-        <p className="text-[#6b7280]">No projects found.</p>
-      ) : (
-        <div className="space-y-6">
-          {filtered.map((project, i) => (
-            <div
-              key={i}
-              className="hover:-translate-y-0.5 transition-transform duration-150"
-            >
-              <div className="flex items-start justify-between gap-4">
+      <div className="pl-0 md:pl-[146px] mt-6 mb-6">
+        <ProjectFilter tags={allTags} selected={selected} onSelect={setSelected} />
+      </div>
+      <div className="space-y-6">
+        {filtered.length === 0 ? (
+          <EditorialGrid marginContent={null}>
+            <p className="text-[#6b7280]">No projects found.</p>
+          </EditorialGrid>
+        ) : (
+          filtered.map((project, i) => (
+            <EditorialGrid key={i} marginContent={null}>
+              <div className="flex items-start justify-between gap-4 hover:-translate-y-0.5 transition-transform duration-150">
                 <div>
                   <div className="font-bold text-[#111]">{project.title}</div>
                   <div className="mt-1 text-sm text-[#6b7280]">{project.description}</div>
@@ -52,10 +53,9 @@ export default function ProjectsSection() {
                   </a>
                 )}
               </div>
-            </div>
-          ))}
-        </div>
-      )}
+            </EditorialGrid>
+          ))
+        )}
       </div>
     </section>
   );

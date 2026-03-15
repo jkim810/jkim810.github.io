@@ -7,34 +7,34 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: 'Spatial Transcriptomics Analysis Pipeline',
+    title: 'ImmunoRad ROBIN',
     description:
-      'End-to-end pipeline for processing and analyzing multiplexed spatial transcriptomics data (CODEX/MERFISH), including cell segmentation, phenotyping, and tissue architecture discovery.',
+      'VisiumHD spatial transcriptomics study characterizing the tumor microenvironment of radiation-resistant colorectal tumors to identify cellular and molecular mechanisms underlying treatment failure.',
     tags: ['spatial biology', 'Python', 'R'],
-    url: 'https://github.com/jkim810',
   },
   {
-    title: 'ML-Based Tumor Microenvironment Classifier',
+    title: 'Tertiary Lymphoid Structure Detection',
     description:
-      'Machine learning models trained on spatial proteomics data to classify tumor microenvironment subtypes and predict patient outcomes in solid tumors.',
-    tags: ['machine learning', 'oncology', 'Python'],
+      'Vision-text fusion models (CLIP-based) applied to H&E whole-slide images to detect and characterize tertiary lymphoid structures in lung adenocarcinoma.',
+    tags: ['deep learning', 'digital pathology', 'Python'],
   },
   {
-    title: 'Single-Cell Multi-Omics Integration Tool',
+    title: 'Early-Stage Lung Cancer AI',
     description:
-      'Computational framework for integrating scRNA-seq, ATAC-seq, and spatial data to reveal cell-state transitions and epigenetic regulatory programs.',
-    tags: ['single-cell', 'R', 'Bioconductor'],
-  },
-  {
-    title: 'Deep Learning Clinical Outcome Predictor',
-    description:
-      'Deep neural network leveraging time-lapse embryo imaging and clinical features to non-invasively predict blastocyst ploidy and IVF success rates.',
+      'AI pipeline using low-dose chest CT to distinguish aggressive from indolent tumors at a pre-malignant stage, enabling earlier risk stratification for lung cancer screening cohorts.',
     tags: ['deep learning', 'clinical', 'Python'],
   },
   {
-    title: 'CODEX Image Processing Workflow',
+    title: 'UTAG: Unsupervised Tissue Architecture Graph',
     description:
-      'Automated image processing and cell phenotyping workflow for CODEX multiplex immunofluorescence data, enabling high-throughput tissue analysis.',
-    tags: ['imaging', 'spatial biology', 'Python'],
+      'Graph-based computational framework for unsupervised discovery of tissue microanatomy from multiplexed imaging data, published in Nature Methods (2022, first author).',
+    tags: ['spatial biology', 'Python', 'R'],
+    url: 'https://doi.org/10.1038/s41592-022-01657-2',
+  },
+  {
+    title: 'Blastocyst Ploidy Prediction',
+    description:
+      'CNN trained on time-lapse embryo imaging to non-invasively predict chromosomal ploidy status, providing a computational alternative to invasive preimplantation genetic testing.',
+    tags: ['deep learning', 'clinical', 'Python'],
   },
 ];

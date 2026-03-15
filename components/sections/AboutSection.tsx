@@ -2,7 +2,7 @@ import { EditorialGrid } from '@/components/EditorialGrid';
 
 export default function AboutSection() {
   return (
-    <section id="about" className="scroll-mt-20">
+    <section id="about" className="scroll-mt-16 md:scroll-mt-20">
       <EditorialGrid
         marginContent={
           <span className="uppercase tracking-wide text-xs text-gray-400">ABOUT</span>
@@ -13,7 +13,7 @@ export default function AboutSection() {
             Junbum Kim
           </h1>
           <p className="mt-2 text-[#6b7280] text-sm tracking-wide">
-            Computational Biology · Spatial Omics · Machine Learning
+            Computational Biology · Spatial Omics · Machine Learning · Digital Pathology · Data Engineering
           </p>
           <p className="mt-4 text-base text-[#111]">
             Postdoctoral Associate at Weill Cornell Medicine in the{' '}
@@ -34,8 +34,11 @@ export default function AboutSection() {
             >
               Yoffe Lab
             </a>
-            . My research integrates spatial transcriptomics, multiplexed imaging, and machine
-            learning to decode tissue architecture in cancer and infectious disease.
+            . I develop computational methods for spatial transcriptomics and multiplexed imaging,
+            with a focus on tumor microenvironment architecture in colorectal and lung cancers.
+            My work spans ETL pipeline engineering, deep learning for digital pathology, and
+            graph-based tissue analysis — translating high-dimensional biological data into
+            clinically interpretable findings.
           </p>
         </div>
       </EditorialGrid>

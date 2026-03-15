@@ -1,27 +1,25 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 
-const SECTION_IDS = ['about', 'publications', 'projects', 'news', 'blog', 'tools', 'talks', 'contact'];
+const SECTION_IDS = ['about', 'publications', 'projects', 'news', 'tools', 'contact'];
 
 export function useActiveSection(): string {
+  const pathname = usePathname();
   const [activeSection, setActiveSection] = useState<string>('about');
 
   useEffect(() => {
-    // If we're on the blog page, return 'blog'
-    if (window.location.pathname.startsWith('/blog')) {
-      setActiveSection('blog');
-      return;
-    }
+    // TODO: re-enable when Blog is added back to nav
+    // if (pathname.startsWith('/blog')) { setActiveSection('blog'); return; }
 
-    const observers: IntersectionObserver[] = [];
+    setActiveSection('about');
 
     const sectionMap = new Map<Element, string>();
 
     const observerCallback: IntersectionObserverCallback = (entries) => {
       const visible = entries.filter((e) => e.isIntersecting);
       if (visible.length === 0) return;
-      // Pick the one closest to top
       const topmost = visible.reduce((prev, curr) =>
         prev.boundingClientRect.top < curr.boundingClientRect.top ? prev : curr
       );
@@ -30,7 +28,7 @@ export function useActiveSection(): string {
     };
 
     const observer = new IntersectionObserver(observerCallback, {
-      rootMargin: '-20% 0px -70% 0px',
+      rootMargin: '-10% 0px -70% 0px',
       threshold: 0,
     });
 
@@ -42,12 +40,38 @@ export function useActiveSection(): string {
       }
     });
 
-    observers.push(observer);
+    // Fallback: when near the bottom of the page, activate the section whose
+    // top is closest to (but still above) the middle of the viewport.
+    const handleScroll = () => {
+      const nearBottom =
+        window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 80;
+      if (!nearBottom) return;
+
+      const mid = window.innerHeight / 2;
+      let best: string | null = null;
+      let bestDist = Infinity;
+
+      sectionMap.forEach((id, el) => {
+        const top = el.getBoundingClientRect().top;
+        if (top <= mid) {
+          const dist = mid - top;
+          if (dist < bestDist) {
+            bestDist = dist;
+            best = id;
+          }
+        }
+      });
+
+      if (best) setActiveSection(best);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
 
     return () => {
-      observers.forEach((obs) => obs.disconnect());
+      observer.disconnect();
+      window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [pathname]);
 
   return activeSection;
 }
