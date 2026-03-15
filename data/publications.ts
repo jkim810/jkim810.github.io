@@ -16,7 +16,7 @@ export const publications: Publication[] = [
       'Junbum Kim, Divij Mathew, Young Kwang Chae, Peng He, Balazs Halmos, Olivier Elemento, Navneet P. Narula',
     venue: 'bioRxiv',
     year: 2025,
-    url: 'https://www.biorxiv.org/content/10.1101/2025.01.15.633205',
+    url: 'https://www.biorxiv.org/content/10.1101/2025.02.19.637138v1',
     selected: true,
   },
   {
