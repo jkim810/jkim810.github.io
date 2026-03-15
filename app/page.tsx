@@ -1,27 +1,21 @@
-import { SectionHeading } from '@/components/SectionHeading';
+import AboutSection from '@/components/sections/AboutSection';
+import PublicationsSection from '@/components/sections/PublicationsSection';
+import ProjectsSection from '@/components/sections/ProjectsSection';
+import NewsSection from '@/components/sections/NewsSection';
+import ToolsSection from '@/components/sections/ToolsSection';
+import TalksSection from '@/components/sections/TalksSection';
+import ContactSection from '@/components/sections/ContactSection';
 
-const SECTIONS = [
-  { id: 'about', label: 'ABOUT', title: 'About' },
-  { id: 'publications', label: 'PUBLICATIONS', title: 'Publications' },
-  { id: 'projects', label: 'PROJECTS', title: 'Projects' },
-  { id: 'news', label: 'NEWS', title: 'News' },
-  { id: 'blog', label: 'BLOG', title: 'Blog' },
-  { id: 'tools', label: 'TOOLS', title: 'Tools' },
-  { id: 'talks', label: 'TALKS', title: 'Talks' },
-  { id: 'contact', label: 'CONTACT', title: 'Contact' },
-];
-
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="max-w-[760px] xl:max-w-[900px] qhd:max-w-[1100px] mx-auto px-6 py-12 space-y-24">
-      {SECTIONS.map(({ id, label, title }) => (
-        <section key={id} id={id} className="scroll-mt-20">
-          <SectionHeading label={label} title={title} />
-          <div className="mt-8 text-gray-400 text-sm italic">
-            Content coming soon…
-          </div>
-        </section>
-      ))}
+    <div className="max-w-[760px] xl:max-w-[900px] qhd:max-w-[1100px] mx-auto px-6 py-12 space-y-16">
+      <AboutSection />
+      <PublicationsSection />
+      <ProjectsSection />
+      <NewsSection />
+      <ToolsSection />
+      <TalksSection />
+      <ContactSection />
     </div>
   );
 }
