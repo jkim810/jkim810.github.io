@@ -11,12 +11,12 @@ export type Publication = {
 export const publications: Publication[] = [
   // ── First-author papers ──────────────────────────────────────────────────
   {
-    title: 'Immune suppressive barriers in the lung tumor microenvironment revealed by spatial multi-omics',
+    title: 'Simultaneous immunomodulation and epithelial-to-mesenchymal transition drives lung adenocarcinoma progression',
     authors:
       'Junbum Kim, Divij Mathew, Young Kwang Chae, Peng He, Balazs Halmos, Olivier Elemento, Navneet P. Narula',
     venue: 'bioRxiv',
     year: 2025,
-    url: 'https://www.biorxiv.org/content/10.1101/2025.01.15.633205',
+    url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC11870609/',
     selected: true,
   },
   {
