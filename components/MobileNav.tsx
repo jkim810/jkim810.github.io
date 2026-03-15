@@ -7,9 +7,10 @@ interface MobileNavProps {
 export function MobileNav({ onOpenMenu }: MobileNavProps) {
   return (
     <header
-      className="lg:hidden fixed top-0 left-0 right-0 z-40 h-14 bg-white border-b border-gray-100 flex items-center justify-end px-6"
+      className="lg:hidden fixed top-0 left-0 right-0 z-40 h-14 bg-white border-b border-gray-100 flex items-center justify-between px-6"
       aria-label="Mobile navigation"
     >
+      <span className="font-semibold text-sm text-gray-900">Junbum Kim</span>
       <button
         onClick={onOpenMenu}
         aria-label="Open menu"

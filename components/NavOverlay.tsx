@@ -26,6 +26,7 @@ export function NavOverlay({ isOpen, onClose, activeSection }: NavOverlayProps) 
       className="fixed inset-0 z-50 bg-white flex flex-col px-6 py-8"
       role="dialog"
       aria-modal="true"
+      aria-label="Site navigation"
     >
       {/* Close button */}
       <button
@@ -37,7 +38,7 @@ export function NavOverlay({ isOpen, onClose, activeSection }: NavOverlayProps) 
       </button>
 
       {/* Nav links */}
-      <nav className="flex flex-col gap-4">
+      <nav aria-label="Main navigation" className="flex flex-col gap-4">
         {NAV_LINKS.map(({ label, href, id }) => {
           const isActive = activeSection === id;
           return (
@@ -45,6 +46,7 @@ export function NavOverlay({ isOpen, onClose, activeSection }: NavOverlayProps) 
               key={id}
               href={href}
               onClick={onClose}
+              aria-current={isActive ? 'location' : undefined}
               className={`text-lg px-2 py-1 focus:outline-none focus:ring-2 focus:ring-[#2563eb] ${
                 isActive
                   ? 'text-blue-600 font-semibold'
