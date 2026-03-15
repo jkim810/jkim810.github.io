@@ -28,7 +28,7 @@ export const tools: Tool[] = [
     url: 'https://github.com/ElementoLab/imc',
   },
   {
-    name: 'UTAG',
+    name: 'utag',
     description:
       'Graph-based Python package for unsupervised discovery of tissue microanatomy from multiplexed imaging data. Implements the method published in Nature Methods (2022).',
     tags: ['Python', 'spatial biology'],
