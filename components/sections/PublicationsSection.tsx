@@ -55,7 +55,7 @@ export default function PublicationsSection() {
         ))}
       </div>
 
-      <div className="pl-[146px] mt-8">
+      <div className="pl-0 md:pl-[146px] mt-8">
         <button
           onClick={() => setShowAll((v) => !v)}
           aria-expanded={showAll}
