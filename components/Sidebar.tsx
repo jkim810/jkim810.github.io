@@ -73,13 +73,14 @@ export function Sidebar({ activeSection }: SidebarProps) {
       </div>
 
       {/* Nav */}
-      <nav className="flex flex-col gap-1 flex-1">
+      <nav aria-label="Main navigation" className="flex flex-col gap-1 flex-1">
         {NAV_LINKS.map(({ label, href, id }) => {
           const isActive = activeSection === id;
           return (
             <Link
               key={id}
               href={href}
+              aria-current={isActive ? 'location' : undefined}
               className="text-sm px-2 py-1.5 rounded transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-[#2563eb] focus:ring-offset-1"
               style={{ color: isActive ? '#2563eb' : '#334155', fontWeight: isActive ? 600 : 400 }}
             >

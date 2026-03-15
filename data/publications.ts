@@ -16,7 +16,7 @@ export const publications: Publication[] = [
       'Junbum Kim, Divij Mathew, Young Kwang Chae, Peng He, Balazs Halmos, Olivier Elemento, Navneet P. Narula',
     venue: 'bioRxiv',
     year: 2025,
-    url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC11870609/',
+    url: 'https://www.biorxiv.org/content/10.1101/2025.01.15.633205',
     selected: true,
   },
   {
@@ -48,7 +48,7 @@ export const publications: Publication[] = [
     venue: 'Nature Medicine',
     year: 2024,
     doi: '10.1038/s41591-024-03075-7',
-    selected: true,
+    selected: false,
   },
   {
     title: 'Epigenetic memory of coronavirus infection in innate immune cells and their progenitors',

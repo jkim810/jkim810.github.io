@@ -9,6 +9,11 @@ type NewsItem = {
   description: string;
 };
 
+function formatDate(d: string): string {
+  const [year, month] = d.split('-');
+  return new Date(+year, +month - 1).toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+}
+
 export default function NewsSection() {
   const filePath = path.join(process.cwd(), 'data', 'news.yml');
   const raw = fs.readFileSync(filePath, 'utf8');
@@ -28,7 +33,7 @@ export default function NewsSection() {
           <EditorialGrid
             key={i}
             marginContent={
-              <span className="text-sm text-[#2563eb] font-medium">{item.date}</span>
+              <span className="text-sm text-[#2563eb] font-medium">{formatDate(item.date)}</span>
             }
           >
             <div>
