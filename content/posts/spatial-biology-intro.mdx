@@ -1,0 +1,95 @@
+---
+title: "Introduction to Spatial Biology Computation"
+date: "2026-03-10"
+tags: ["spatial-biology", "machine-learning", "tutorial"]
+description: "A walkthrough of core computational approaches in spatial biology, with interactive visualizations and annotated code examples."
+---
+
+# Introduction to Spatial Biology Computation
+
+Spatial biology has emerged as one of the most transformative frontiers in modern biomedical research. By preserving the physical location of cells within tissue sections while simultaneously profiling their molecular states — gene expression, protein abundance, chromatin accessibility — spatial technologies enable researchers to ask questions that were previously impossible: How does a tumor orchestrate its microenvironment? How do immune cells traffic through inflamed tissue? How does cellular neighborhood influence cell fate decisions?
+
+## Why Spatial Context Matters
+
+Traditional single-cell RNA sequencing (scRNA-seq) dissociates tissue into single-cell suspensions, irrevocably discarding the spatial relationships between cells. While scRNA-seq has been revolutionary for cataloging cell types and states, it cannot tell us where those cells reside, which neighbors they interact with, or how location shapes their transcriptional programs.
+
+Spatial transcriptomics platforms — including Visium (10x Genomics), MERFISH, Slide-seq, and Xenium — preserve this spatial context. Each data point is not just a cell profile but a spatially-indexed molecular observation. This fundamentally changes the analytical toolkit we need.
+
+## Core Computational Approaches
+
+Spatial biology analysis pipelines typically involve several key steps:
+
+1. **Preprocessing and quality control** — filtering low-quality spots or cells, normalization, and dimensionality reduction.
+2. **Cell type deconvolution** — assigning cell type identities to spatial spots using reference single-cell data.
+3. **Spatially variable gene detection** — identifying genes whose expression is non-randomly distributed across tissue.
+4. **Cell-cell communication inference** — modeling ligand-receptor interactions between spatially proximal cells.
+5. **Niche identification** — clustering spots by their local cellular neighborhood composition.
+
+<Figure src="/images/spatial-overview.png" caption="Overview of a spatial transcriptomics workflow, from tissue section to computational analysis." alt="Spatial transcriptomics workflow diagram" />
+
+## Dimensionality Reduction and Visualization
+
+After preprocessing, we typically embed data into a low-dimensional space for visualization. UMAP is the most common approach, but for spatial data we often overlay embedding coordinates back onto the tissue section. Here is an example scatter plot showing a UMAP embedding colored by cell type cluster:
+
+<PlotlyChart
+  data={[
+    {
+      x: [1.2, 2.3, 0.5, 3.1, 1.8, 2.7, 0.9, 3.5, 1.5, 2.1],
+      y: [2.1, 1.5, 3.2, 0.8, 2.8, 1.2, 3.7, 2.0, 1.0, 3.4],
+      mode: "markers",
+      type: "scatter",
+      marker: {
+        color: [0, 0, 1, 1, 2, 2, 3, 3, 4, 4],
+        colorscale: "Viridis",
+        size: 10
+      },
+      text: ["T cell", "T cell", "B cell", "B cell", "Macrophage", "Macrophage", "Tumor", "Tumor", "Fibroblast", "Fibroblast"],
+      hovertemplate: "%{text}<extra></extra>"
+    }
+  ]}
+  layout={{
+    title: "UMAP Embedding of Spatial Transcriptomics Data",
+    xaxis: { title: "UMAP 1" },
+    yaxis: { title: "UMAP 2" },
+    height: 400
+  }}
+/>
+
+## Loading and Processing Data with Python
+
+Below is a typical workflow for loading a Visium dataset using the `scanpy` and `squidpy` libraries in Python:
+
+<NotebookBlock
+  code={`import scanpy as sc
+import squidpy as sq
+
+# Load Visium data
+adata = sc.read_visium('data/visium_sample/')
+adata.var_names_make_unique()
+
+# Quality control
+sc.pp.calculate_qc_metrics(adata, inplace=True)
+adata = adata[adata.obs['total_counts'] > 1000]
+
+# Normalize and log-transform
+sc.pp.normalize_total(adata, target_sum=1e4)
+sc.pp.log1p(adata)
+
+# Compute UMAP
+sc.pp.neighbors(adata, n_neighbors=15)
+sc.tl.umap(adata)
+
+print(f"Dataset shape: {adata.shape}")
+print(f"Spatial coordinates: {adata.obsm['spatial'].shape}")`}
+  output={`Dataset shape: (3842, 33538)
+Spatial coordinates: (3842, 2)
+[Scanpy] Computing neighbors...
+[Scanpy] Running UMAP...
+Done.`}
+/>
+
+## Looking Ahead
+
+The field is rapidly evolving. Sub-cellular resolution platforms like Xenium and MERFISH can now profile hundreds to thousands of genes at nanometer resolution, enabling single-molecule spatial analysis. Integrating spatial data with other modalities — proteomics, epigenomics, live imaging — is the next frontier. Computational methods are racing to keep pace with the data deluge, and tools built on deep learning and graph neural networks are showing particular promise for modeling spatial cell-cell interactions.
+
+If you are interested in these methods, check out the tools section of this site for software I have developed for spatial biology analysis.

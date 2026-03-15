@@ -11,13 +11,15 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://jkim810.github.io'),
-  title: 'Junbum Kim — Computational Biologist',
+  title: {
+    default: 'Junbum Kim — Computational Biologist',
+    template: '%s | Junbum Kim',
+  },
   description:
-    'Postdoctoral Associate at Weill Cornell Medicine. Research in spatial biology, machine learning, and computational oncology.',
+    'Personal academic website of Junbum Kim, Postdoctoral Associate at Weill Cornell Medicine. Research: spatial biology, ML, computational oncology.',
   openGraph: {
     title: 'Junbum Kim — Computational Biologist',
-    description:
-      'Postdoctoral Associate at Weill Cornell Medicine. Research in spatial biology, machine learning, and computational oncology.',
+    description: 'Spatial biology, ML, and computational oncology research.',
     images: [{ url: '/images/profile.jpg' }],
   },
 };

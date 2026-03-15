@@ -6,6 +6,8 @@ const config: Config = {
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/$1',
+    // Map ESM-only packages to CJS-compatible mocks
+    '^next-mdx-remote/rsc$': '<rootDir>/__mocks__/next-mdx-remote-rsc.tsx',
   },
   transform: {
     '^.+\\.(ts|tsx)$': ['ts-jest', { tsconfig: { jsx: 'react-jsx' } }],

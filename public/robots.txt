@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://jkim810.github.io
+
+# Sitemaps
+Sitemap: https://jkim810.github.io/sitemap.xml
