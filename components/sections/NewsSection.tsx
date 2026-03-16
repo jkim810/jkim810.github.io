@@ -22,6 +22,7 @@ export default function NewsSection() {
   return (
     <section id="news" className="scroll-mt-16 md:scroll-mt-20 border-t border-[#f0f0f0] pt-8">
       <EditorialGrid
+        accent={false}
         marginContent={
           <span className="uppercase tracking-wide text-xs text-gray-400">NEWS</span>
         }

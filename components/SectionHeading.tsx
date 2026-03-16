@@ -8,6 +8,7 @@ interface SectionHeadingProps {
 export function SectionHeading({ label, title }: SectionHeadingProps) {
   return (
     <EditorialGrid
+      accent={false}
       marginContent={
         <span className="uppercase tracking-wide text-xs text-gray-400">
           {label}
