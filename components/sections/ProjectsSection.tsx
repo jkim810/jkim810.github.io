@@ -27,32 +27,32 @@ export default function ProjectsSection() {
         ) : (
           filtered.map((project, i) => (
             <EditorialGrid key={i} marginContent={null} accent={!!project.url}>
-              <div className={`flex items-start justify-between gap-4 ${project.url ? 'hover:-translate-y-0.5 transition-transform duration-150' : ''}`}>
+              {project.url ? (
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block hover:-translate-y-0.5 transition-transform duration-150"
+                >
+                  <div className="font-bold text-[#111]">{project.title}</div>
+                  <div className="mt-1 text-sm text-[#6b7280]">{project.description}</div>
+                  <div className="mt-2 flex flex-wrap gap-1">
+                    {project.tags.map((tag) => (
+                      <span key={tag} className="px-2 py-0.5 text-xs bg-[#f3f4f6] text-[#374151] rounded">{tag}</span>
+                    ))}
+                  </div>
+                </a>
+              ) : (
                 <div>
                   <div className="font-bold text-[#111]">{project.title}</div>
                   <div className="mt-1 text-sm text-[#6b7280]">{project.description}</div>
                   <div className="mt-2 flex flex-wrap gap-1">
                     {project.tags.map((tag) => (
-                      <span
-                        key={tag}
-                        className="px-2 py-0.5 text-xs bg-[#f3f4f6] text-[#374151] rounded"
-                      >
-                        {tag}
-                      </span>
+                      <span key={tag} className="px-2 py-0.5 text-xs bg-[#f3f4f6] text-[#374151] rounded">{tag}</span>
                     ))}
                   </div>
                 </div>
-                {project.url && (
-                  <a
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="shrink-0 text-sm text-[#2563eb] hover:underline"
-                  >
-                    View →
-                  </a>
-                )}
-              </div>
+              )}
             </EditorialGrid>
           ))
         )}

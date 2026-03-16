@@ -13,27 +13,27 @@ function truncateAuthors(authors: string, max = 5): string {
 function PubCard({ pub, prominent }: { pub: (typeof publications)[0]; prominent: boolean }) {
   const href = pub.doi ? `https://doi.org/${pub.doi}` : pub.url;
   const hasLink = !!href;
-
-  return (
-    <div className={hasLink ? 'hover:-translate-y-0.5 transition-transform duration-150' : ''}>
+  const inner = (
+    <>
       <div className="text-sm font-bold text-[#2563eb] uppercase tracking-wide">{pub.venue}</div>
-      {hasLink ? (
-        <a
-          href={href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`mt-1 block hover:underline ${prominent ? 'font-bold' : 'font-semibold'} text-[#111]`}
-        >
-          {pub.title}
-        </a>
-      ) : (
-        <div className={`mt-1 ${prominent ? 'font-bold' : 'font-semibold'} text-[#111]`}>
-          {pub.title}
-        </div>
-      )}
+      <div className={`mt-1 ${prominent ? 'font-bold' : 'font-semibold'} text-[#111]`}>{pub.title}</div>
       <div className="mt-1 text-sm text-[#6b7280]">{truncateAuthors(pub.authors)}</div>
-    </div>
+    </>
   );
+
+  if (hasLink) {
+    return (
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block hover:-translate-y-0.5 transition-transform duration-150"
+      >
+        {inner}
+      </a>
+    );
+  }
+  return <div>{inner}</div>;
 }
 
 export default function PublicationsSection() {
