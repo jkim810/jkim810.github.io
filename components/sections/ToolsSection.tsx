@@ -9,7 +9,7 @@ export default function ToolsSection() {
       <div className="mt-6 space-y-6">
         {tools.map((tool, i) => (
           <EditorialGrid key={i} marginContent={null}>
-            <div className="flex items-start justify-between gap-4 hover:-translate-y-0.5 transition-transform duration-150">
+            <div className={`flex items-start justify-between gap-4 ${tool.url ? 'hover:-translate-y-0.5 transition-transform duration-150' : ''}`}>
               <div>
                 <div className="font-bold text-[#111]">{tool.name}</div>
                 <div className="mt-1 text-sm text-[#6b7280]">{tool.description}</div>
