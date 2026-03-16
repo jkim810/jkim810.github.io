@@ -3,9 +3,10 @@ import type { ReactNode } from 'react';
 interface EditorialGridProps {
   marginContent: ReactNode;
   children: ReactNode;
+  accent?: boolean;
 }
 
-export function EditorialGrid({ marginContent, children }: EditorialGridProps) {
+export function EditorialGrid({ marginContent, children, accent = true }: EditorialGridProps) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-[130px_1fr] gap-0">
       {/* Left margin column */}
@@ -13,7 +14,7 @@ export function EditorialGrid({ marginContent, children }: EditorialGridProps) {
         {marginContent}
       </div>
       {/* Right content column with spine */}
-      <div style={{ borderLeft: '3px solid #2563eb', paddingLeft: '1rem' }}>
+      <div style={{ borderLeft: `3px solid ${accent ? '#2563eb' : 'transparent'}`, paddingLeft: '1rem' }}>
         {children}
       </div>
     </div>
