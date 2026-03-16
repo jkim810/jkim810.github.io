@@ -26,7 +26,7 @@ export default function ProjectsSection() {
           </EditorialGrid>
         ) : (
           filtered.map((project, i) => (
-            <EditorialGrid key={i} marginContent={null}>
+            <EditorialGrid key={i} marginContent={null} accent={!!project.url}>
               <div className={`flex items-start justify-between gap-4 ${project.url ? 'hover:-translate-y-0.5 transition-transform duration-150' : ''}`}>
                 <div>
                   <div className="font-bold text-[#111]">{project.title}</div>

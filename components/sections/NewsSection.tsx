@@ -32,8 +32,9 @@ export default function NewsSection() {
         {news.map((item, i) => (
           <EditorialGrid
             key={i}
+            accent={false}
             marginContent={
-              <span className="text-sm text-[#2563eb] font-medium">{formatDate(item.date)}</span>
+              <span className="text-sm text-[#6b7280] font-medium">{formatDate(item.date)}</span>
             }
           >
             <div>
