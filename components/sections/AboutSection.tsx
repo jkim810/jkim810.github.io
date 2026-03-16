@@ -4,6 +4,7 @@ export default function AboutSection() {
   return (
     <section id="about" className="scroll-mt-16 md:scroll-mt-20">
       <EditorialGrid
+        accent={false}
         marginContent={
           <span className="uppercase tracking-wide text-xs text-gray-400">ABOUT</span>
         }
