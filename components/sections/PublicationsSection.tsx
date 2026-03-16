@@ -10,6 +10,32 @@ function truncateAuthors(authors: string, max = 5): string {
   return parts.slice(0, max).join(', ') + ', et al.';
 }
 
+function PubCard({ pub, prominent }: { pub: (typeof publications)[0]; prominent: boolean }) {
+  const href = pub.doi ? `https://doi.org/${pub.doi}` : pub.url;
+  const hasLink = !!href;
+
+  return (
+    <div className={hasLink ? 'hover:-translate-y-0.5 transition-transform duration-150' : ''}>
+      <div className="text-sm font-bold text-[#2563eb] uppercase tracking-wide">{pub.venue}</div>
+      {hasLink ? (
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`mt-1 block hover:underline ${prominent ? 'font-bold' : 'font-semibold'} text-[#111]`}
+        >
+          {pub.title}
+        </a>
+      ) : (
+        <div className={`mt-1 ${prominent ? 'font-bold' : 'font-semibold'} text-[#111]`}>
+          {pub.title}
+        </div>
+      )}
+      <div className="mt-1 text-sm text-[#6b7280]">{truncateAuthors(pub.authors)}</div>
+    </div>
+  );
+}
+
 export default function PublicationsSection() {
   const [showAll, setShowAll] = useState(false);
 
@@ -34,23 +60,7 @@ export default function PublicationsSection() {
               <span className="text-sm text-[#2563eb] font-medium">{pub.year}</span>
             }
           >
-            <div className="hover:-translate-y-0.5 transition-transform duration-150">
-              <div className="text-sm font-bold text-[#2563eb] uppercase tracking-wide">
-                {pub.venue}
-              </div>
-              <div className="mt-1 font-bold text-[#111]">{pub.title}</div>
-              <div className="mt-1 text-sm text-[#6b7280]">{truncateAuthors(pub.authors)}</div>
-              {(pub.doi || pub.url) && (
-                <a
-                  href={pub.doi ? `https://doi.org/${pub.doi}` : pub.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-2 inline-block text-sm text-[#2563eb] hover:underline"
-                >
-                  Read paper →
-                </a>
-              )}
-            </div>
+            <PubCard pub={pub} prominent={true} />
           </EditorialGrid>
         ))}
       </div>
@@ -65,36 +75,23 @@ export default function PublicationsSection() {
         </button>
       </div>
 
-      {showAll && (
-        <div className="border-t border-[#f0f0f0] mt-8 pt-6 space-y-6">
-          {nonSelected.map((pub, i) => (
-            <EditorialGrid
-              key={i}
-              marginContent={
-                <span className="text-sm text-gray-400">{pub.year}</span>
-              }
-            >
-              <div className="hover:-translate-y-0.5 transition-transform duration-150">
-                <div className="text-sm font-bold text-[#2563eb] uppercase tracking-wide">
-                  {pub.venue}
-                </div>
-                <div className="mt-1 font-semibold text-[#111]">{pub.title}</div>
-                <div className="mt-1 text-sm text-[#6b7280]">{truncateAuthors(pub.authors)}</div>
-                {(pub.doi || pub.url) && (
-                  <a
-                    href={pub.doi ? `https://doi.org/${pub.doi}` : pub.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-2 inline-block text-sm text-[#2563eb] hover:underline"
-                  >
-                    Read paper →
-                  </a>
-                )}
-              </div>
-            </EditorialGrid>
-          ))}
+      {/* Slide-down animation using CSS grid rows */}
+      <div className={`grid transition-all duration-300 ease-in-out ${showAll ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'}`}>
+        <div className="overflow-hidden">
+          <div className="border-t border-[#f0f0f0] mt-8 pt-6 space-y-6">
+            {nonSelected.map((pub, i) => (
+              <EditorialGrid
+                key={i}
+                marginContent={
+                  <span className="text-sm text-gray-400">{pub.year}</span>
+                }
+              >
+                <PubCard pub={pub} prominent={false} />
+              </EditorialGrid>
+            ))}
+          </div>
         </div>
-      )}
+      </div>
     </section>
   );
 }
