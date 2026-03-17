@@ -10,6 +10,7 @@ import {
 
 const NAV_LINKS = [
   { label: 'About', href: '/#about', id: 'about' },
+  { label: 'Education', href: '/#education', id: 'education' },
   { label: 'Publications', href: '/#publications', id: 'publications' },
   { label: 'Projects', href: '/#projects', id: 'projects' },
   { label: 'News', href: '/#news', id: 'news' },
