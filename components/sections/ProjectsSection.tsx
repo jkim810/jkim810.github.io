@@ -15,7 +15,7 @@ export default function ProjectsSection() {
 
   return (
     <section id="projects" className="scroll-mt-16 md:scroll-mt-20 border-t border-[#f0f0f0] pt-8">
-      <SectionHeading label="PROJECTS" title="Active Research" />
+      <SectionHeading label="PROJECTS" title="Research" />
       <div className="pl-0 md:pl-[146px] mt-6 mb-6">
         <ProjectFilter tags={allTags} selected={selected} onSelect={setSelected} />
       </div>

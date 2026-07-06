@@ -6,7 +6,6 @@ import NewsSection from '@/components/sections/NewsSection';
 import ToolsSection from '@/components/sections/ToolsSection';
 // TODO: re-enable TalksSection once talk entries are populated
 // import TalksSection from '@/components/sections/TalksSection';
-import ContactSection from '@/components/sections/ContactSection';
 
 export default function HomePage() {
   return (
@@ -18,7 +17,6 @@ export default function HomePage() {
       <NewsSection />
       <ToolsSection />
       {/* <TalksSection /> */}
-      <ContactSection />
     </div>
   );
 }

@@ -17,7 +17,18 @@ export default function AboutSection() {
             Computational Biology · Spatial Omics · Machine Learning · Digital Pathology · Data Engineering
           </p>
           <p className="mt-4 text-base text-[#111]">
-            Postdoctoral Associate at Weill Cornell Medicine in the{' '}
+            AIML Engineer on the AI for Science team at{' '}
+            <a
+              href="https://www.gsk.com/"
+              className="text-[#2563eb] hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GSK
+            </a>
+            , where I build machine learning models and pipelines for biomedical data across drug
+            discovery and development. Previously a Postdoctoral Associate at Weill Cornell Medicine
+            in the{' '}
             <a
               href="https://elementolab.weill.cornell.edu/"
               className="text-[#2563eb] hover:underline"
@@ -35,9 +46,9 @@ export default function AboutSection() {
             >
               Yoffe Lab
             </a>
-            . I develop computational methods for spatial transcriptomics and multiplexed imaging,
-            with a focus on tumor microenvironment architecture in colorectal and lung cancers.
-            My work spans ETL pipeline engineering, deep learning for digital pathology, and
+            , where I developed computational methods for spatial transcriptomics and multiplexed
+            imaging, with a focus on tumor microenvironment architecture in colorectal and lung
+            cancers. My work spans ETL pipeline engineering, deep learning for digital pathology, and
             graph-based tissue analysis — translating high-dimensional biological data into
             clinically interpretable findings.
           </p>

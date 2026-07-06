@@ -17,7 +17,6 @@ const NAV_LINKS = [
   // TODO: re-add Blog once content is ready — { label: 'Blog', href: '/blog', id: 'blog' },
   { label: 'Tools', href: '/#tools', id: 'tools' },
   // TODO: re-add Talks once populated — { label: 'Talks', href: '/#talks', id: 'talks' },
-  { label: 'Contact', href: '/#contact', id: 'contact' },
 ];
 
 const SOCIAL_LINKS = [
@@ -68,8 +67,8 @@ export function Sidebar({ activeSection }: SidebarProps) {
         />
         <div className="text-center">
           <p className="font-semibold text-sm" style={{ color: '#0f172a' }}>Junbum Kim</p>
-          <p className="text-xs mt-0.5" style={{ color: '#475569' }}>Postdoctoral Associate</p>
-          <p className="text-xs" style={{ color: '#475569' }}>Weill Cornell Medicine</p>
+          <p className="text-xs mt-0.5" style={{ color: '#475569' }}>AIML Engineer, AI for Science</p>
+          <p className="text-xs" style={{ color: '#475569' }}>GSK</p>
         </div>
       </div>
 
